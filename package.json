@@ -1,0 +1,17 @@
+{
+  "name": "vendingmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main/resources/static/src/index.js",
+  "scripts": {
+    "react": "npx babel -w src/main/resources/static/src -d src/main/resources/static/reactjs-build --presets react-app/prod --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "webpack": "^5.21.2"
+  }
+}

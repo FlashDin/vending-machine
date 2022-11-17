@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+
+        }
+    </script>
+</head>
+<body>
+<div id="u-root"></div>
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script th:inline="javascript">
+    const APP_HOST = [[${@environment.getProperty('app.host')}]];
+</script>
+<script type="module" th:src="@{/reactjs-build/index.js}"></script>
+</html>
